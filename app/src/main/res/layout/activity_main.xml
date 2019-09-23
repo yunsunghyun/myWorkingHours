@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/haike">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="@string/startTime"
+            android:textSize="@dimen/timeTextSize" />
+
+        <EditText
+            android:id="@+id/StartHour"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:hint="@string/hint_startTimeHour"
+            android:inputType="time"
+            android:maxLength="2"
+            android:textSize="@dimen/timeTextSize"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/hour"
+            android:textSize="@dimen/timeTextSize" />
+
+        <EditText
+            android:id="@+id/StartMinute"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:hint="@string/hint_startTimeMinute"
+            android:inputType="time"
+            android:maxLength="2"
+            android:textSize="@dimen/timeTextSize"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/minute"
+            android:textSize="@dimen/timeTextSize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="@string/endTime"
+            android:textSize="@dimen/timeTextSize" />
+
+        <EditText
+            android:id="@+id/EndHour"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:hint="@string/hint_endTimeHour"
+            android:inputType="time"
+            android:maxLength="2"
+            android:textSize="@dimen/timeTextSize"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/hour"
+            android:textSize="@dimen/timeTextSize" />
+
+        <EditText
+            android:id="@+id/EndMinute"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:hint="@string/hint_endTimeMinute"
+            android:inputType="time"
+            android:maxLength="2"
+            android:textSize="@dimen/timeTextSize"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/minute"
+            android:textSize="@dimen/timeTextSize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="@string/restTime"
+            android:textSize="@dimen/timeTextSize" />
+
+        <EditText
+            android:id="@+id/RestMinute"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:hint="@string/hint_restTimeMinute"
+            android:inputType="time"
+            android:maxLength="3"
+            android:textSize="@dimen/timeTextSize"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/minute"
+            android:textSize="@dimen/timeTextSize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BtnCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculation"
+            android:textSize="@dimen/timeTextSize" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yourWorkingTime"
+            android:textSize="@dimen/timeTextSize" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="@string/workingTime"
+            android:textSize="@dimen/timeTextSize" />
+
+        <TextView
+            android:id="@+id/WorkingHour"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:hint="@string/workingHour"
+            android:maxLength="2"
+            android:textSize="@dimen/timeTextSize"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/hour"
+            android:textSize="@dimen/timeTextSize" />
+
+        <TextView
+            android:id="@+id/WorkingMinute"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:hint="@string/workingMinute"
+            android:maxLength="2"
+            android:textSize="@dimen/timeTextSize"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/minute"
+            android:textSize="@dimen/timeTextSize" />
+    </LinearLayout>
+</LinearLayout>
